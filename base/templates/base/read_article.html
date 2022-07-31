@@ -6,7 +6,7 @@
             <img class="rounded-circle article-img" src="{{ article.author.account.img.url }}">
             <a class="mr-2">{{ article.author }}</a>
             <small class="text-muted"> | Published on {{ article.date_added|date:"F d, Y" }}
-                {% if user.is_authenticated %}
+                {% if authenticated_user == article.author %}
                 | <a href="{% url 'update-article' article.id %}">Update</a>
                 | <a href="{% url 'delete-article' article.id %}">Delete article</a>
                 {% endif %}
