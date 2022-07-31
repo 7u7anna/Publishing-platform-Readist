@@ -1,0 +1,20 @@
+{% extends 'base/index.html' %}
+{% block content %}
+    {% for article in articles %}
+        <article class="content-section">
+            <div class="article-body">
+                <div class="article-metadata">
+                    <img class="rounded-circle article-img" src="{{ article.author.account.img.url }}">
+                    <a class="mr-2">{{ article.author }}</a>
+                    <small class="text-muted"> | Published on {{ article.date_added|date:"F d, Y" }}</small>
+                </div>
+                <h2 class="article-title"><a class="" href="{% url 'read' article.id %}">{{ article.title }}</a></h2>
+                <p class="article-content-intro">{{ article.content|slice:":200" }}</p>
+                <div class="article-categories">
+                    <p class="article-category category text-muted">{{ article.category }}</p>
+                    <p class="article-subcategory subcategory text-muted">{{ article.sub_category }}</p>
+                </div>
+            </div>
+        </article>
+    {% endfor %}
+{% endblock content %}

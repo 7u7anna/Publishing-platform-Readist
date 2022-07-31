@@ -1,0 +1,37 @@
+{% extends 'base/index.html' %}
+{% block content %}
+    <div class="account-content">
+        <div class="account-data border-bottom">
+            <ul>
+                <li><img class="rounded user-account-img" src="{{ user.account.img.url }}" style="width:100px;height:100px;"></li>
+                <li class="acc-info mt-4">
+                    <h1 style="font-style:bold;">{{ user.username }}</h1>
+                    <p>{{ user.email }}</p>
+                    <small class="text-muted">
+                        Joined {{ user.date_joined|date:"F d, Y" }} | 
+                    </small>
+                </li>
+            </ul>
+            <p class="text-muted ml-4">Articles</p>
+        </div>
+        <div class="user-articles-section mt-4">
+            {% for article in user_articles_list %}
+            <article class="content-section">
+                <div class="article-body">
+                    <div class="article-metadata">
+                        <img class="rounded-circle article-img" src="{{ article.author.account.img.url }}">
+                        <a class="mr-2" href="{% url 'account' %}">{{ article.author }}</a>
+                        <small class="text-muted"> | Published on {{ article.date_added|date:"F d, Y" }}</small>
+                    </div>
+                    <h2 class="article-title"><a class="" href="{% url 'read' article.id %}">{{ article.title }}</a></h2>
+                    <p class="article-content-intro">{{ article.content|slice:":200" }}</p>
+                    <div class="article-categories">
+                        <p class="article-category category text-muted">{{ article.category }}</p>
+                        <p class="article-subcategory subcategory text-muted">{{ article.sub_category }}</p>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends 'base/index.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="article-metadata mb-5">
+                <img class="rounded-circle article-img" src="{{ article.author.account.img.url }}">
+                <small>Draft by <a class="mr-2">{{ article.author }}</a></small>
+                <button class="publish-article-btn" type="submit">Update</button>
+            </div>
+            <fieldset class="form-group">
+                {{ form|crispy }}
+            </fieldset>
+        </form>
+    </div>
+{% endblock content %}

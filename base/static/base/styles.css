@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+.body {
+    background-color: #fafafa;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    min-height: 100%;
+    overflow: scroll;
+}
+
+.top-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* nav bar top */
+.shadow{
+    float: right;
+    width: 100%;
+    background-color: black;
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    border-bottom: solid;
+}
+
+.top-container {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quote {
+    margin-top: 10px;
+    color: whitesmoke;
+}
+
+.header-top {
+    margin-top: 5px;
+    display: flex;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.header-top .quote {
+    margin-left: 20px;
+}
+
+.profile-btn {
+    background-color: #fafafa;
+    color: black;
+    border-radius: 30px;
+    padding: 5px;
+    width: 20vh;
+    margin-right: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* leftside navbar */
+
+.sidebar-left {
+    position: fixed;
+    margin-top: 100px;
+    padding-left: 2rem;
+    width: 18vw;
+    float: left;
+    height: 80vh;
+    padding: 20px;
+    text-decoration: none;
+    background-color: white;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.sidebar-left li {
+    padding-left: 20px;
+    margin-top: 40px;
+}
+
+.sidebar-left li a {
+    color: #242526;
+}
+
+.sidebar-left li a:hover {
+    color: #D3D3D3;
+    text-decoration: none;
+    width: 100vw;
+}
+
+/* middle */
+
+.middle {
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-left: 45px;
+    padding-right: 60px;
+    font-size: 1rem;
+}
+
+.main-content {
+    margin-left: 200px;
+    height: 100vh;
+    padding-top: 0;
+    padding: 10px;
+}
+
+.make-update-btn {
+    background-color: black;
+    color: #fafafa;
+    border-radius: 30px;
+    padding: 5px;
+    width: 20vh;
+    margin-right: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* article */
+
+.content-section {
+    /* background: #ffffff; */
+    background-color: #fafafa;
+    margin-top: 0;
+    padding-top: 0;
+    padding: 15px 30px 40px 30px;
+    /* border: 1px solid #dddddd; */
+    border-radius: 3px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.article-title a {
+    color: #444444;
+}
+
+a.article-title:hover {
+    color: #428bca;
+    text-decoration: none;
+}
+
+.article-content-intro {
+    white-space: pre-line;
+}
+
+.article-img {
+    height: 30px;
+    width: 30px;
+    margin-right: 16px;
+}
+
+.article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+}
+
+.article-metadata a {
+    color: black;
+    text-transform: capitalize;
+}
+
+.article-metadata a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.article-categories .article-categories-read {
+    display: inline;
+    justify-content: space-between;
+}
+
+.article-categories .subcategory {
+    float: right;
+}
+
+.article-categories .category {
+    float: left;
+    border-radius: 20px;
+    padding: 3px 8px;
+    background-color: #ececec;
+}
+
+/* inside article read  */
+
+.article-categories-read {
+    text-transform: uppercase;
+}
+
+.article-title-read {
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-style: solid;
+}
+
+.article-content-read {
+    font-size: 1.5rem;
+}
+
+/* create new read */
+
+.publish-article-btn {
+    background-color: black;
+    color: #fafafa;
+    border-radius: 30px;
+    padding: 5px;
+    width: 20vh;
+    margin-right: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* delete article */
+
+.btn-save-delete , 
+.btn-cancel-delete {
+    background-color: black;
+    color: #fafafa;
+    border-radius: 30px;
+    padding: 5px;
+    width: 25vh;
+    margin-right: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* not authenticated user front */
+
+.body-front {
+    background-color: #fafafa;
+}
+
+.shadow-front {
+    float: right;
+    width: 100%;
+    background-color: #fafafa;
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.top-container-front {
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+}
+
+.logo-txt-front {
+    color: #333;
+    margin-left: 70px;
+}
+
+.quote-front {
+    padding-top: 12px; 
+    margin-right: 320px;
+    color: #333;
+}
+
+.top-container-front ul{
+    margin-right: 40px;
+}
+
+.top-container-front ul li{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.top-container-front ul li a{
+    color: #333;
+}
+
+.create-acc-btn {
+    background-color: black;
+    color: #fafafa;
+    border-radius: 30px;
+    padding: 3px;
+    width: 25vh;
+    padding: 5px;
+}
+
+.main-content-front {
+    margin: 150px 65px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* login */
+
+.login-section {
+    margin-top: 120px;
+    padding: 10px 400px;
+}
+
+.forgot-pass-link {
+    margin-left: 70px;
+}
+
+.welcome {
+    margin: 20px 20px 30px 20px;
+    margin-left: 45px;
+}
+
+.login-btn {
+    background-color: black;
+    color: #fafafa;
+    border-radius: 30px;
+    padding: 3px;
+    width: 25vh;
+    padding: 5px;
+    margin-left: 100px;
+}
+
+.login-acc-link {
+    margin-left: 65px;
+}
+
+/* about page */
+
+
+.about-txt {
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* account profile */
+
+.account-data ul {
+    margin: 20px;
+}
+
+.account-data ul li{
+    display: inline-block;
+    margin: 20px 20px -60px 20px;
+}
+
+.acc-info {
+    padding: 10px;
+}
+
+.account-data img {
+    margin-bottom: 90px;
+}
+
+
+/* account profile settings */
+
+.btn-save-settings {
+    background-color: black;
+    color: #fafafa;
+    border-radius: 30px;
+    padding: 5px;
+    width: 25vh;
+    margin-right: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.content-section-create {
+    height: 100%;
+}
+
+
+
+
+
