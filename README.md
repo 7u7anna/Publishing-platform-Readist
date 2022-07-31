@@ -1,14 +1,10 @@
 # Publishing-platform-Readist
 Interactive publishing web application . Includes user registration, login, reset password via email sending system.
 
-<img width="943" alt="profile page" src="https://user-images.githubusercontent.com/77678424/182025704-2c0d98a3-52b1-42b3-8052-211b161ce262.png">
-<img width="941" alt="front menu" src="https://user
-<img width="943" alt="profile update" src="https://user-images.githubusercontent.com/77678424/182025716-d8c355c4-cdff-431e-9d4a-7b968f445399.png">
--images.githubusercontent.com/77678424/182025706-a041a733-2b03-49ce-874b-07773a84b8a1.png">
-<img width="940" alt="create new" src="https://user-images.githubusercontent.com/77678424/182025712-96242f2e-f144-472a-a116-0399d312b3cd.png">
-
-<img width="947" alt="about page" src="https://user-images.githubu
-<img width="941" alt="front logged" src="https://user-images.githubusercontent.com/77678424/182025711-b25dbc46-08f9-4452-ab12-40e5616f51eb.png">
-
-<img width="941" alt="register page" src="https://user-images.githubusercontent.com/77678424/182025709-eb61149a-1e7f-4693-ad5c-6c34820da947.png">
-sercontent.com/77678424/182025707-ea77aef4-d8f8-4b53-9928-78014cb78afc.png">
+<img width="941" alt="front logged" src="https://user-images.githubusercontent.com/77678424/182025771-4f958c54-20d0-483f-ae90-7ea1b25315da.png">
+<img width="943" alt="profile page" src="https://user-images.githubusercontent.com/77678424/182025776-dd738f49-ee52-4925-bea5-8609c9cf646f.png">
+<img width="943" alt="profile update" src="https://user-images.githubusercontent.com/77678424/182025781-bfc64e47-a134-418b-8547-f763f46cb1e6.png">
+<img width="940" alt="create new" src="https://user-images.githubusercontent.com/77678424/182025785-c8b03ceb-edee-4e22-92ee-862c809040f9.png">
+<img width="941" alt="front menu" src="https://user-images.githubusercontent.com/77678424/182025796-d5af3005-f5e1-4115-bb94-50d5c462e165.png">
+<img width="941" alt="register page" src="https://user-images.githubusercontent.com/77678424/182025801-c035c46f-cde7-418e-b7ca-3ac35f4dd259.png">
+<img width="947" alt="about page" src="https://user-images.githubusercontent.com/77678424/182025807-ad9da2ba-6ec6-4e2e-8d7c-4b37db81eb21.png">
